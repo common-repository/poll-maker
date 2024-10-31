@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.box-apm {
+    border: 3px solid #0C6291;
+    width: 100%;
+    margin: 0 auto;
+    padding: 14px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: .2s ease-in !important;
+    -webkit-transition: -webkit-filter .2s ease-in !important;
+    box-shadow: none;
+}
+
+.box-apm>div {
+    margin: 16px 0;
+}
+
+.box-apm label {
+    cursor: pointer;
+}
+
+.box-apm * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.apm-button-box {
+    width: 100%;
+    text-align: center;
+}
+
+input[type='button'].ays-poll-btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    line-height: 20px;
+    border-radius: 0;
+    box-shadow: unset;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 9px 15px !important;
+    height: 35px;
+    min-width: 90px;
+    transition: .2s ease-in !important;
+    -webkit-transition: -webkit-filter .2s ease-in !important;
+}
+
+input[type='button'].ays-poll-btn:hover {
+    border: none;
+    box-shadow: unset;
+    -webkit-filter: opacity(0.7);
+    filter: opacity(0.7);
+}
+
+input[type='button'].ays-poll-btn:focus {
+    outline: none;
+}
+
+.box-apm h2,
+.box-apm h5 {
+    margin: 0 auto;
+    text-align: center;
+    align-self: center;
+}
+
+.flex-apm {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.answer-title.flex-apm {
+    justify-content: space-between;
+    border: none;
+}
+
+.answer-percent {
+    max-width: 100%;
+    min-width: 1%;
+    height: 16px;
+    padding: 0 3px;
+    line-height: 16px;
+    margin-bottom: 12px;
+    background-color: #0C6291;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 12px;
+    transition: 1s ease-out;
+}
+
+.results-apm {
+    padding: 0 14px;
+}
+
+.apm-img-box {
+    text-align: center;
+}
+
+.ays-poll-img {
+    width: 100%;
+    display: inline-block;
+    max-width: max-content;
+}
+
+.box-apm input[type='radio'] {
+    display: none;
+}
+
+.question {
+    text-align: center;
+}
+
+.apm-choosing label {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 30px;
+    display: block;
+    margin: 12px auto;
+    height: 40px;
+    width: 100%;
+    padding: 5px 10px;
+    transition: .3s ease-in;
+}
+
+.choosing-poll input[type='radio']:checked+label {
+    font-weight: bold;
+}
+
+.choosing-poll {
+    padding: 0 14px;
+}
+
+.rating-poll,
+.voting-poll {
+    text-align: center;
+}
+
+.rating-poll .apm-answers,
+.voting-poll .apm-answers {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.rating-poll .apm-answers>div {
+    margin: 0 5px;
+}
+
+.voting-poll .apm-answers>div {
+    margin: 0 15px;
+}
+
+.box-apm i {
+    position: relative;
+}
+
+label>i.fa-thumbs-down {
+    top: .3em;
+}

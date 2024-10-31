@@ -1,0 +1,75 @@
+.flex-apm {
+    margin: 0 auto;
+    border: 1px solid dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+}
+
+.flex-apm>*:not(img):not(.ays-poll-vote-btn):not(span) {
+    margin: .5rem;
+    width: 95%;
+}
+
+.flex-apm * {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.flex-apm label {
+    display: inline-block;
+}
+
+.ays-poll-vote-btn {
+    line-height: 0.5;
+    margin-bottom: 1rem;
+}
+
+.flex-col-apm {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.flex-apm h2,
+.flex-apm h5 {
+    width: 95%;
+    text-align: center;
+    align-self: center;
+}
+
+.flex-apm .btn {
+    align-self: center;
+}
+
+.answer-title.flex-apm {
+    width: 97%;
+    justify-content: space-between;
+    border: none;
+}
+
+.answer-percent {
+    max-width: 99%;
+    min-width: 1%;
+    height: 1rem;
+    margin: 0 .25rem;
+    padding: 0 3px;
+    margin-bottom: 1rem;
+    background-color: dodgerblue;
+    border-radius: .35rem;
+    text-align: right;
+    font-size: .75rem;
+}
+
+.results-apm {
+    width: 99%;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.ays-poll-img {
+    width: 96%;
+    display: inline-block;
+    margin: 5px auto;
+}

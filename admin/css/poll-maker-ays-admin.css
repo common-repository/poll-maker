@@ -1,0 +1,435 @@
+body,
+#wpbody {
+    background-color: #f1f1f1 !important;
+}
+
+
+/* ~~ Top Navigation Bar ~~ */
+
+.ays-notice-banner {
+    width: calc(100% - 20px);
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.ays-notice-banner #navigation-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.ays-notice-banner .navigation-bar {
+    width: 100%;
+    text-align: center;
+}
+
+.ays-notice-banner .navigation-bar a.logo-container {
+    margin: 0 0 0 20px;
+}
+
+.ays-notice-banner .navigation-bar a.logo-container .logo {
+    float: left;
+    width: 80px;
+}
+
+.ays-notice-banner .navigation-bar ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    padding: 0;
+    margin: 0 20px 0 0;
+    max-width: 630px;
+    min-width: 400px;
+}
+
+.ays-notice-banner .navigation-bar li {
+    padding: 0px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.ays-notice-banner .navigation-bar li a {
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 0 2em;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    letter-spacing: 0;
+}
+
+.ays-notice-banner .navigation-bar li a:after {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0);
+    bottom: 0;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+
+.ays-notice-banner .navigation-bar li a:hover:after {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-color: #fff;
+    transition: width 350ms ease-in-out;
+    width: 100%;
+}
+
+.ays-text-input {
+    width: 100%;
+    height: 40px;
+}
+
+input.ays-text-input,
+textarea.ays-textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+}
+
+input.ays-text-input.ays-text-input-short {
+    width: 200px;
+    display: inline-block;
+    margin: 7.5px 0;
+}
+
+input.ays-text-input.ays-text-input-short:first-child {
+    margin-top: 0;
+}
+
+textarea.ays-textarea {
+    height: 160px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+#ays-button-top,
+#ays-button {
+    margin-left: 10px;
+}
+
+select.ays-select {
+    width: 200px;
+    height: 40px !important;
+}
+
+label {
+    margin-top: 5px;
+}
+
+i:not(.mce-caret):not(.mce-ico):not(.fa-info-circle) {
+    display: inline-block;
+    font-size: 27px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    color: var(--primary);
+}
+
+div[class|="if"] {
+    display: none;
+}
+
+#add-answer {
+    position: absolute;
+    left: 224px;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.remove-answer {
+    cursor: pointer;
+}
+
+.ays-poll-change-notice {
+    font-style: italic;
+    font-size: 12px;
+    margin-left: 10px;
+    color: var(--gray);
+}
+
+input[type=text]:not(#current-page-selector),
+input[type=search],
+input[type=tel],
+input[type=time],
+input[type=url],
+input[type=week],
+input[type=password],
+input[type=color],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+select,
+textarea,
+.select2-selection__rendered {
+    font-size: 16px;
+    /* height: 40px; */
+    border-radius: 4px;
+    /* margin-top: -1px; */
+}
+
+.ays-field {
+    width: 100%;
+}
+
+a.add-question-image {
+    display: inline-block;
+    background: #666;
+    color: #fff;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all .3s;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.ays-poll-question-image-container {
+    position: relative;
+    width: 360px;
+    display: none;
+    margin: 10px auto;
+}
+
+.ays-poll-question-image-container .ays-remove-question-img {
+    background: url(../images/remove-normal.png) no-repeat center center/80% rgba(255, 255, 255, .9);
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.ays-poll-question-image-container .ays-remove-question-img:hover {
+    background: url(../images/remove-hover.png) no-repeat center center/80% rgba(255, 255, 255, .9);
+    transition: all .3s;
+}
+
+.ays-poll-question-image-container img {
+    width: 100%;
+}
+
+a.add-question-image:hover,
+a.add-question-image:focus {
+    outline: none;
+    box-shadow: none;
+    background: #666;
+    transition: all .3s;
+}
+
+.select2 {
+    display: inline-block !important;
+}
+
+.select2-selection.select2-selection--single {
+    height: 40px !important;
+    border: 1px solid #ddd !important;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07) !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 39px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 40px !important;
+}
+
+.select2.select2-container {
+    width: 200px !important;
+}
+
+select[multiple]+.select2.select2-container {
+    width: 100% !important;
+}
+
+.ays-poll-tab-content {
+    animation: fadeEffect 1s;
+    display: none;
+}
+
+.ays-poll-tab-content-active {
+    display: block;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.nav-tab-wrapper .nav-tab:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+#ays-poll-question_ifr {
+    height: 250px !important;
+}
+
+.ays-poll-container,
+.ays-poll-live-container {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    transition: 1s ease-in;
+}
+
+.ays-poll-live-container {
+    width: 96%;
+    margin: 10px auto;
+    background: white;
+    border: none;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#ays_styles_tab,
+#ays-poll-live-container {
+    max-width: 100%;
+    min-width: 300px;
+}
+
+.flex-apm {
+    margin: 0 auto;
+    border: 1px solid dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+}
+
+.flex-apm>*:not(img):not(.ays-poll-vote-btn):not(span) {
+    margin: .5rem;
+    width: 95%;
+}
+
+.flex-apm * {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.flex-apm label {
+    display: inline-block;
+}
+
+.ays-poll-vote-btn {
+    line-height: 0.5;
+    margin-bottom: 1rem;
+}
+
+.flex-col-apm {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.flex-apm h2,
+.flex-apm h5 {
+    width: 95%;
+    text-align: center;
+    align-self: center;
+}
+
+.flex-apm .btn {
+    align-self: center;
+    height: 2rem;
+    padding: .5rem;
+}
+
+.ays-poll-img {
+    width: 96%;
+    display: inline-block;
+    margin: 5px auto;
+}
+
+.aligncenter {
+    align-self: center;
+}
+
+.alignleft {
+    align-self: flex-start;
+}
+
+.alignright {
+    align-self: flex-end;
+}
+
+#ays-poll-rate-value {
+    margin-left: 1rem;
+    display: none;
+}
+
+#cats-in-table {
+    margin: 0;
+    padding: 0;
+}
+
+#cats-in-table li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 3px 5px;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 1px 0 #666;
+    border-radius: 3px;
+}
+
+.ays_help {
+    top: 1px;
+    position: relative;
+    color: dodgerblue !important;
+    cursor: help;
+}
+
+.ays_help i {
+    font-size: 14px !important;
+}
+
+.tooltip {
+    text-align: left !important;
+    position: absolute !important;
+    left: 20px !important;
+}
+
+.tooltip .tooltip-inner {
+    position: relative !important;
+    z-index: 99999999999 !important;
+    width: auto !important;
+    max-width: 16vw !important;
+    /* text-align: justify!important; */
+}
